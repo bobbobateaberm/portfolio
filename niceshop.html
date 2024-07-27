@@ -10,10 +10,62 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="icon" type="image/x-icon" href="./pics1/logo2.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+     .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .section {
+          width: 35%;
 
+            margin: 10px;
+            min-width: 300px; /* Set your desired minimum width here */
+        }
+        .section h2 {
+            font-weight: bold;
+        }
+        .top-bar, .bottom-bar {
+            height: 25px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        .bottom-bar {
+            height: 60px;
+            justify-content: center;
+        }
+        .decorative-element {
+            width: 80px;
+            height: 35px;
+            border-radius: 40%;
+            background: #5e5e5e;
+            margin-bottom: 15px;
+        }
+        iframe {
+            width: 100%; /* Ensure iframe takes full width */
+            margin: 0;
+            height: 540px;
+        }
+        @media (max-width: 1200px) {
+            .section {
+                flex: 1 1 48%; /* Adjust to fit two sections in smaller widths */
+                min-width: 100px; /* Adjust min-width for smaller screens */
+            }
+        }
+        @media (max-width: 700px) {
+            .section {
+                flex: 1 1 100%; /* Full width for mobile screens */
+                min-width: 100%; /* Full width for mobile screens */
+            }
+        }
+</style>
     
   </head>
   <body style="font-family: Rubik;" >
@@ -28,7 +80,7 @@
          <a class="home" href="index.html" style="padding: 10px;font-size: 40px;" >PHUNIPITH</a>
       
          <a href="website.html" style="padding: 30px; float: right;font-weight: 600;">MiniProjects</a>
-      <a href="website.html" style="padding: 30px; float: right;font-weight: 600;">NiceshopWeb</a>
+      <a href="niceshop.html" style="padding: 30px; float: right;font-weight: 600;">NiceshopWeb</a>
       <a href="website.html" style="padding: 30px; float: right;font-weight: 600;">PhunipithWeb</a>
       <a href="sqd.html" style="padding: 30px; float: right;font-weight: 600;">SquareDodge</a>
       <a href="javascript:void(0);"style="padding: 30px;  font-weight: 600;" class="icon" onclick="myFunction()">
@@ -43,104 +95,225 @@
 
 
 
-<div style="display: flex;justify-content: center;">
-  <img style="width: 70%;height: 70%;margin: 100px;" src="./pics1/stack.png">
 
-</div>
 
 
     <!--PERSONAL-INFO-->
     
-    <div>
+    <div style="margin-top: 250px;">
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-4">
+            <img src="pics1/NiceShop.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-8">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">NiceShop | Smoothie & Beverage</h1>
+            <p class="lead">This WebApp is based from my own family business.We have been selling smoothies at the hospital canteen for over 10 years now. From my perspective , I see that many
+              nurses and medical staff were needed to take some walk to order our smoothies from another compound. So I come with the idea that we could make an automation system that can take orders online and effectively
+            handle loads of request from customers. </p>
+            <div class="d-grid gap-2 d-md-block justify-content-md-start">
+              <p style="font-size: 20px;margin-top: 10px;color: rgb(0, 167, 28);font-weight: bolder;">Try our Websites Here!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div style="background-color: rgb(248, 248, 248);" class="px-4 pt-5 my-5">
+        <div class="col-lg-6 mx-auto">
+        </div>
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+          <iframe style="box-shadow: -1px -1px 81px -11px rgba(0,0,0,0.2); border-radius: 2%; width: 100%; height: 80vh;" src="http://niceshop.wuaze.com/index.php?i=1" frameborder="0"></iframe>
+        </div>
+          
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Client-Side Features</h2>
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-user text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">User Separation</h3>
+              <p>Separate users session by generating random IDs for each.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-cart-shopping text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Cart Systems</h3>
+              <p>Add and edit items into the cart.There is a calculated price sums up. </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-truck text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Delivery Systems</h3>
+              <p>Delivery to user's location and Pick-up option at onsite.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-file-invoice text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Checkout Systems</h3>
+              <p>Sending order details of each items and its orderIDs to Admin Panel.</p>
+            </div>
+          </div>
+          
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-key text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">OrderIDs Generation</h3>
+              <p>IDs for order confirmation for each checkout. This is randomly generated.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-home text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Friendly Interface</h3>
+              <p>Sorting items and search bar provided. Tags for each items.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-mobile text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Responsive Designs</h3>
+              <p>Works on smaller screen and devices. Some element are cut out in phones.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-rectangle-ad text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Advertisment Section</h3>
+              <p>Advertisement slider at the top of the page. Autoslides are implemented.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="px-4 pt-5 my-5  ">
+
+        <div class="col-lg-6 mx-auto">
+        </div>
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+          <iframe style="box-shadow: -1px -1px 81px -11px rgba(0,0,0,0.2); border-radius: 2%; width: 100%; height: 80vh;" src="http://niceshop.wuaze.com/admin.php?i=1" frameborder="0"></iframe>
+        </div>
+          
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Adminstration Features</h2>
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-list text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Inventory System</h3>
+              <p>Adding , edting items in the inventory and real time updates.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-cloud-arrow-up text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Uploading items</h3>
+              <p>Form consist of name , price , quantity , tags , images.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-folder-tree text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Order Handling</h3>
+              <p>Receiving orders from various user. Details are kept in the table.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <i class="fas fa-solid fa-face-smile text-body-secondary flex-shrink-0 me-3" style="font-size: 1.75em;"></i>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Friendly Interface</h3>
+              <p>All data are kept in sortable table. Each section comes with tag sorting.</p>
+            </div>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <div class="container marketing">
 
-      
-      <hr style="border: 3px solid black;opacity: 1;margin-bottom: 50px;" class="featurette-divider">
-      
-      <div class="row featurette">
-        <div  class="col-md-7">
-          <h2 style="font-size: 40px;" class="featurette-heading fw-normal lh-1">Home page</h2>
 
-          <ul style="font-size: 20px;margin-top: 30px;">
-            <li>Introduction of the content</li>
-            <li>Education</li>
-            <li>IT project and Experience</li>
-            <li>Media skills</li>
-            <li>Other Activities</li>
-            <li>Contact Footer</li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <iframe  autoplay loop muted  width="560" height="315" src="https://www.youtube.com/embed/CZi-jAqb4iE?si=5k7Lbya6vt64QiLA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        
-        </div>
+      <div style="display: flex;justify-content: center;">
+        <img style="width: 100%;height: 70%;" src="./pics1/stack2.png">
+      
       </div>
-      
-      <hr class="featurette-divider">
-      
-     
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-        <div  class="col-md-7">
-          <h2 style="font-size: 40px;" class="featurette-heading fw-normal lh-1">Project Page</h2>
 
-          <ul style="font-size: 20px;margin-top: 30px;">
-            <li>SquareDodge (game)</li>
-            <li>Phunipith Website</li>
-            <li>NiceShop (E-commerce Website)</li>
-            <li>Mini Projects</li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <iframe  autoplay loop muted  width="560" height="315" src="https://www.youtube.com/embed/TlGOc8cozew?si=mx_46hiVTWYoFo1F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-       
-      </div>
+      <hr class="featurette-divider" style="border: 3px solid black; opacity: 1; margin-bottom: 50px;">
+
+    
       
-      <hr class="featurette-divider">
-      <hr class="featurette-divider">
-      
-      <div class="row featurette">
-        <div  class="col-md-7">
-          <h2 style="font-size: 40px;" class="featurette-heading fw-normal lh-1">IT Experience page</h2>
-
-          <ul style="font-size: 20px;margin-top: 30px;">
-
-            <li>The Mall Experience</li>
-            <li>IT workshop</li>
-            <li>Certification</li>
-        
-
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <iframe  autoplay loop muted width="560" height="315" src="https://www.youtube.com/embed/EFDblR_oEH8?si=3yDJeLBm_HieqU-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-      
-
-      <div style="margin-top: 50px;">
-<a  href="https://github.com/bobbobateaberm/portfolio"  id="col" class="col" style="text-decoration: none;">
-       
-          
-        <div style="background-color: rgb(16, 33, 126); height: 100%;padding: 0;text-align: center;" class="card-body">
-          <p style="font-size: 30px;font-family: Pixel;color: rgb(255, 255, 255);" class="card-text">>>> Source Code</p>
-          <div class="d-flex justify-content-between align-items-center">
+      <div class="row align-items-md-stretch">
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+          <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Responsiveness</h1>
+            <p class="fs-4">We have mobile webapp consist of <span style="color: orangered;">shop sites</span> and <span style="color: orangered;">admin panel</span> supported for more device .both comes with adjusted size to work on mobile devices. The site is responsive on most device and can be adjust the element accordingly.</p>
           </div>
         </div>
-      </div>
-    </a>
-      </div>
+
+          </div>
+     
+          <div class="container2">
+            <!-- Shop Site Section -->
+            <div class="section">
+                <h2>Shop Site</h2>
+                <div class="top-bar"></div>
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <iframe style="border: rgb(0, 0, 0) solid 20px;" src="http://niceshop.wuaze.com/index.php?i=1" frameborder="0"></iframe>
+                </div>
+                <div class="bottom-bar">
+                    <div class="decorative-element"></div>
+                </div>
+            </div>
+    
+            <!-- Admin Panel Section -->
+            <div class="section">
+                <h2>Admin Panel</h2>
+                <div class="top-bar"></div>
+                <div style="display: flex; justify-content: center; width: 100%;">
+                    <iframe style="border: rgb(0, 0, 0) solid 20px;" src="http://niceshop.wuaze.com/admin.php" frameborder="0"></iframe>
+                </div>
+                <div class="bottom-bar">
+                    <div class="decorative-element"></div>
+                </div>
+            </div>
+        </div>
+        
+      
+      
+      
       
 
-<div style="margin-top: 250px;"></div>
-      
-      <!-- /END THE FEATURETTES -->
-      
-      </div><!-- /.container -->
+
+
+
       
   </div>
 
@@ -155,9 +328,8 @@
 
 
 
- 
-    
 
+ 
 
 <div class="container">
   <footer class="py-3 my-4">
