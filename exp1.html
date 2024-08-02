@@ -143,9 +143,11 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h2 class="featurette-heading fw-normal lh-1">Chula MOOC 2<span class="text-body-secondary"> Python | IoT | Flask | DialogFlow</span></h2>
-        <p class="lead">This course provided me with decent knowledge on using Python and its libraries. The project is about an AI robot gardener which will respond to moisture and light inputs.
-          The mechanism involves using GUI sliders to input light and moisture values. These values are then sent to a Python file to respond with different conditions. The response is then sent to Line, which is connected to Dialogflow and the server. 
-          For example, if you set the value of light to 60 in the GUI, then if you open the Line chat and ask if the sensor light bulb is on, the Line bot will respond with "off" depending on what value the GUI is set to.
+        <p class="lead">This course provided me with decent knowledge on using Python and its libraries. The project is about an AI robot gardener which will respond to moisture and light inputs. 
+
+          The mechanism involves using GUI sliders to input light and moisture values that was made with pygamewidget. These values are then sent to a Python file to respond with different conditions made with Flask libraries. The response is then sent to Line, which is connected to Dialogflow and the server. We use Ngrok to open a localhost for a server-side. 
+          
+          For example, If you set the light value to 60 in the GUI and ask the Line bot if the sensor light bulb is on, it will respond with "on” or “off" based on the GUI setting .
         </p>
       </div>
       <div class="col-md-5">
